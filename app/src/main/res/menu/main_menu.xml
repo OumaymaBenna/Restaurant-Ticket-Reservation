@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Menu principal -->
+    <item
+        android:id="@+id/menu_menu"
+        android:title="@string/nav_menu"
+        android:icon="@android:drawable/ic_menu_agenda"
+        app:showAsAction="ifRoom" />
+
+    <!-- Profil -->
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        app:showAsAction="ifRoom" />
+
+    <!-- Notifications -->
+    <item
+        android:id="@+id/menu_notifications"
+        android:title="Notifications"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="ifRoom" />
+
+    <!-- Commentaires -->
+    <item
+        android:id="@+id/menu_comments"
+        android:title="Commentaires"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="ifRoom" />
+
+
+    <!-- Déconnexion -->
+    <item
+        android:id="@+id/action_logout"
+        android:title="Déconnexion"
+        android:icon="@drawable/ic_logout"
+        app:showAsAction="always" />
+
+</menu>

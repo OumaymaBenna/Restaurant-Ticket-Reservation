@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ISET Restaurant</string>
+    <string name="app_subtitle">Réservation de tickets restaurant ISET Tataouine</string>
+
+    <string name="nav_home">Accueil</string>
+    <string name="nav_reservations">Mes Réservations</string>
+    <string name="nav_menu">Menu</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="login_title">Connexion</string>
+    <string name="register_title">Inscription</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="full_name">Nom complet</string>
+    <string name="student_id">Numéro étudiant</string>
+    <string name="login_button">Se connecter</string>
+    <string name="register_button">S’inscrire</string>
+    <string name="no_account">Pas encore de compte ?</string>
+    <string name="have_account">Déjà un compte ?</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+
+    <string name="welcome">Bienvenue</string>
+    <string name="welcome_title">Bienvenue sur notre plateforme de réservation</string>
+    <string name="welcome_subtitle">Réservez vos repas facilement et rapidement, à tout moment</string>
+    <string name="reserve_now">Réserver maintenant</string>
+    <string name="my_reservations">Mes réservations</string>
+    <string name="today_menu">Menu du jour</string>
+    <string name="quick_reserve">Réservation rapide</string>
+    <string name="discover_services">Découvrez nos services</string>
+
+    <string name="services_title">Nos Services</string>
+    <string name="service_online_booking">Réservation en ligne</string>
+    <string name="service_online_booking_desc">Planifiez vos repas à l’avance et choisissez votre créneau horaire</string>
+    <string name="service_secure_payment">Paiement sécurisé</string>
+    <string name="service_secure_payment_desc">Payez facilement en ligne avec votre carte étudiante</string>
+    <string name="service_notifications">Alertes personnalisées</string>
+    <string name="service_notifications_desc">Recevez des notifications sur les menus du jour</string>
+    <string name="finalize_payment">Finalisez votre Paiement</string>
+    <string name="payment_description">Effectuez votre paiement en toute sécurité pour confirmer votre réservation</string>
+    <string name="amount_paid">Montant payé :</string>
+    <string name="pay_now">Payer maintenant</string>
+    <string name="our_services">Nos Services</string>
+    <string name="lunch_dinner_title">Réservation de Déjeuner et Dîner</string>
+    <string name="lunch_dinner_desc">Réservez vos repas du jour en quelques clics</string>
+    <string name="cold_meals_title">Repas Froids</string>
+    <string name="cold_meals_desc">Commandez des repas froids pratiques et savoureux</string>
+    <string name="comments_title">Commentaires</string>
+    <string name="comments_desc">Partagez vos avis pour améliorer nos services</string>
+    <string name="reserve">Réserver</string>
+    <string name="comment">Commenter</string>
+
+    <string name="reservation_title">Nouvelle Réservation</string>
+    <string name="select_date">Sélectionner une date</string>
+    <string name="select_time">Sélectionner un horaire</string>
+    <string name="select_menu">Choisir un menu</string>
+    <string name="number_of_tickets">Nombre de tickets</string>
+    <string name="total_price">Prix total</string>
+    <string name="confirm_reservation">Confirmer la réservation</string>
+    <string name="reservation_success">Réservation confirmée !</string>
+    <string name="reservation_success_msg">Votre réservation a été effectuée avec succès</string>
+
+    <string name="menu_title">Menu du jour</string>
+    <string name="appetizer">Entrée</string>
+    <string name="main_course">Plat principal</string>
+    <string name="dessert">Dessert</string>
+    <string name="drink">Boisson</string>
+    <string name="price">Prix</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="profile">Profil</string>
+    <string name="edit_profile">Modifier le profil</string>
+    <string name="edit">Modifier</string>
+    <string name="logout">Déconnexion</string>
+    <string name="logout_confirm_title">Confirmer la déconnexion</string>
+    <string name="logout_confirm_message">Voulez-vous vraiment vous déconnecter ?</string>
+    <string name="profile_picture">Photo de profil</string>
+
+    <string name="students_satisfied">Étudiants satisfaits</string>
+    <string name="partner_restaurants">Restaurants partenaires</string>
+    <string name="satisfaction_rate">Pourcentage de satisfaction</string>
+    <string name="avg_wait_time">Minutes d’attente moyenne</string>
+
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="ok">OK</string>
+    <string name="error">Erreur</string>
+    <string name="loading">Chargement…</string>
+
+    <string name="quick_actions">Actions rapides</string>
+    <string name="reserve_table">Réserver une table</string>
+    <string name="arrow">Flèche</string>
+
+    <string name="settings">Paramètres</string>
+
+    <string name="service_online_booking_en">Online Booking</string>
+    <string name="service_online_booking_desc_en">Book your table online easily</string>
+    <string name="service_secure_payment_en">Secure Payment</string>
+    <string name="service_secure_payment_desc_en">Safe and fast transactions</string>
+    <string name="service_notifications_en">Notifications</string>
+    <string name="service_notifications_desc_en">Stay updated with alerts</string>
+    <string name="university">Université</string>
+    <string name="phone">Téléphone</string>
+    <string name="registration_date">Inscrit le</string>
+    <string name="back">Retour</string>
+
+    <!-- Paiement et Abonnement -->
+    <string name="payment_title">Paiement</string>
+    <string name="payment_success">Paiement réussi</string>
+    <string name="payment_cancelled">Paiement annulé</string>
+    <string name="payment_error">Erreur lors du paiement</string>
+    <string name="subscription_title">Abonnement Mensuel</string>
+    <string name="subscription_price">15.000 TND/mois</string>
+    <string name="subscription_balance">Solde d\'abonnement</string>
+    <string name="subscription_balance_value">%1$.3f TND</string>
+    <string name="subscribe_now">S\'abonner maintenant</string>
+    <string name="subscription_active">Abonnement actif</string>
+    <string name="subscription_inactive">Aucun abonnement actif</string>
+    <string name="deduction_from_subscription">0.200 TND déduit du solde d\'abonnement</string>
+    <string name="insufficient_balance">Solde d\'abonnement insuffisant</string>
+    <string name="subscription_expired">Abonnement expiré</string>
+    <string name="subscription_benefits">Avec l\'abonnement, chaque réservation coûte seulement 0.200 TND</string>
+
+</resources>

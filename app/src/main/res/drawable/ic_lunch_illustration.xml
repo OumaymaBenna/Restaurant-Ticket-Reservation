@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Fond circulaire jaune pâle -->
+    <path
+        android:fillColor="#FFF7D1"
+        android:pathData="M100,10
+                          A90,90 0 1,1 100,190
+                          A90,90 0 1,1 100,10" />
+
+    <!-- Soleil en haut -->
+    <path
+        android:fillColor="#FFE27A"
+        android:pathData="M100,28
+                          A18,18 0 1,1 100,64
+                          A18,18 0 1,1 100,28" />
+
+    <!-- Rayons du soleil -->
+    <path
+        android:strokeColor="#FFD85C"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="
+            M100,6 L100,20
+            M100,72 L100,86
+            M72,50 L60,42
+            M128,50 L140,42
+            M72,78 L60,86
+            M128,78 L140,86" />
+
+    <!-- Assiette extérieure -->
+    <path
+        android:fillColor="#E8E8E8"
+        android:pathData="M100,70
+                          A55,55 0 1,1 100,180
+                          A55,55 0 1,1 100,70" />
+
+    <!-- Assiette intérieure -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M100,90
+                          A35,35 0 1,1 100,160
+                          A35,35 0 1,1 100,90" />
+
+    <!-- Sandwich / repas léger -->
+    <path
+        android:fillColor="#FFC78A"
+        android:pathData="M75,115
+                          A25,15 0 1,1 125,115
+                          A25,15 0 1,1 75,115" />
+
+    <!-- Légumes verts -->
+    <path
+        android:fillColor="#8ED081"
+        android:pathData="M90,105
+                          A10,10 0 1,1 89.5,105" />
+
+    <path
+        android:fillColor="#8ED081"
+        android:pathData="M110,105
+                          A10,10 0 1,1 109.5,105" />
+
+    <!-- Fourchette -->
+    <path
+        android:strokeColor="#444444"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M55,90 L55,160" />
+
+    <path
+        android:strokeColor="#444444"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M50,90 L50,110
+                          M55,90 L55,110
+                          M60,90 L60,110" />
+
+    <!-- Cuillère -->
+    <path
+        android:strokeColor="#444444"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M145,90 L145,160" />
+
+    <path
+        android:fillColor="#444444"
+        android:pathData="M145,90
+                          A12,12 0 1,1 145,114
+                          A12,12 0 1,1 145,90" />
+
+</vector>

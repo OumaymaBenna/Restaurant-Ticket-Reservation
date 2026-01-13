@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Fond circulaire -->
+    <path
+        android:fillColor="#FFEFE5"
+        android:pathData="M100,10
+                          A90,90 0 1,1 100,190
+                          A90,90 0 1,1 100,10" />
+
+    <!-- Assiette extérieure -->
+    <path
+        android:fillColor="#E8E8E8"
+        android:pathData="M100,40
+                          A60,60 0 1,1 100,160
+                          A60,60 0 1,1 100,40" />
+
+    <!-- Assiette intérieure -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M100,60
+                          A40,40 0 1,1 100,140
+                          A40,40 0 1,1 100,60" />
+
+    <!-- Fourchette -->
+    <path
+        android:strokeColor="#444444"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M55,60 L55,140" />
+
+    <path
+        android:strokeColor="#444444"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M50,60 L50,80
+                          M55,60 L55,80
+                          M60,60 L60,80" />
+
+    <!-- Couteau -->
+    <path
+        android:strokeColor="#444444"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M145,60 L145,140" />
+
+    <path
+        android:fillColor="#444444"
+        android:pathData="M145,60 L160,80 L145,85z" />
+
+    <!-- Ombre de la nourriture -->
+    <path
+        android:fillColor="#FFD0A8"
+        android:pathData="M100,75
+                          A25,20 0 1,1 99.5,75" />
+
+</vector>

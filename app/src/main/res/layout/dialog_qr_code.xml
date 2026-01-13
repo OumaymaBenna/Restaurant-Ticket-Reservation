@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_modern_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp">
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votre QR Code"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#F5F5F5"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Présentez ce code au restaurant"
+            android:textSize="16sp"
+            android:textColor="#F5F5F5"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- QR Code Image -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="#FFFFFF"
+                android:contentDescription="QR Code de réservation" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Informations -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#20FFFFFF">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+            <TextView
+                android:id="@+id/textMealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repas: Déjeuner"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#F5F5F5"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: 21/11/2025"
+                android:textSize="16sp"
+                android:textColor="#E0E0E0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Bouton Fermer -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonClose"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Fermer"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:backgroundTint="#FF6B35"
+            android:textColor="#F5F5F5"
+            app:elevation="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Cercle extérieur -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,2
+                          A10,10 0 1,1 12,22
+                          A10,10 0 1,1 12,2z" />
+
+    <!-- Aiguille des heures -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M12,12 L12,7"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="2" />
+
+    <!-- Aiguille des minutes -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M12,12 L16,12"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="2" />
+</vector>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_modern_background">
+
+    <!-- AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/glassmorphism_modern"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Réservation"
+            app:titleTextColor="#FFFFFF"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="#FF6B35"
+            android:background="@android:color/transparent" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- ScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:paddingTop="32dp">
+
+            <!-- Titre -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Réservation Déjeuner/Dîner"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#F5F5F5"
+                android:letterSpacing="0.02"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choisissez vos repas et réservez vos tickets."
+                android:textSize="18sp"
+                android:textColor="#F5F5F5"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Cartes Déjeuner et Dîner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <!-- Carte Déjeuner -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardLunch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="16dp"
+                    app:strokeColor="#FF6B35"
+                    app:strokeWidth="2.5dp"
+                    app:cardBackgroundColor="#30FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🍽️"
+                            android:textSize="40sp"
+                            android:layout_marginBottom="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Déjeuner"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#F5F5F5"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prix : 200 millimes"
+                            android:textSize="16sp"
+                            android:textColor="#F5F5F5"
+                            android:layout_marginBottom="16dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonAddLunch"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:text="Ajouter"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:cornerRadius="26dp"
+                            app:backgroundTint="#FF6B35"
+                            android:textColor="#FFFFFF"
+                            app:elevation="6dp"
+                            app:icon="@drawable/ic_add_circle"
+                            app:iconTint="#FFFFFF"
+                            app:iconSize="20dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Carte Dîner -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardDinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="16dp"
+                    app:strokeColor="#FF6B35"
+                    app:strokeWidth="2.5dp"
+                    app:cardBackgroundColor="#30FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌙"
+                            android:textSize="40sp"
+                            android:layout_marginBottom="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dîner"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#F5F5F5"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prix : 200 millimes"
+                            android:textSize="16sp"
+                            android:textColor="#F5F5F5"
+                            android:layout_marginBottom="16dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonAddDinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:text="Ajouter"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:cornerRadius="26dp"
+                            app:backgroundTint="#FF6B35"
+                            android:textColor="#FFFFFF"
+                            app:elevation="6dp"
+                            app:icon="@drawable/ic_add_circle"
+                            app:iconTint="#FFFFFF"
+                            app:iconSize="20dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Carte Repas Froid -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardColdMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="16dp"
+                app:strokeColor="#FF6B35"
+                app:strokeWidth="2.5dp"
+                app:cardBackgroundColor="#30FFFFFF"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🥗 Repas Froid"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#F5F5F5"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prix : 200 millimes"
+                        android:textSize="16sp"
+                        android:textColor="#F5F5F5"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Samedi soir - Salades, sandwiches et plats froids"
+                        android:textSize="14sp"
+                        android:textColor="#F5F5F5"
+                        android:layout_marginBottom="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonAddColdMeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="Ajouter"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="26dp"
+                        app:backgroundTint="#FF6B35"
+                        android:textColor="#FFFFFF"
+                        app:elevation="6dp"
+                        app:icon="@drawable/ic_add_circle"
+                        app:iconTint="#FFFFFF"
+                        app:iconSize="20dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Total à payer -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="16dp"
+                app:strokeColor="#FF6B35"
+                app:strokeWidth="2.5dp"
+                app:cardBackgroundColor="#30FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total à payer :"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#F5F5F5" />
+
+                    <TextView
+                        android:id="@+id/textViewTotalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 TND"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF6B35"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Liste des repas réservés -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repas réservés :"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#F5F5F5"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/containerReservedMeals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Statut du Ticket -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="16dp"
+                app:strokeColor="#FF6B35"
+                app:strokeWidth="2.5dp"
+                app:cardBackgroundColor="#30FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Statut du Ticket :"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#F5F5F5" />
+
+                    <TextView
+                        android:id="@+id/textViewTicketStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En attente"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF6B35"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bouton Réserver -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonReserve"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Réserver le ticket"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:letterSpacing="0.05"
+                app:backgroundTint="#FF6B35"
+                app:cornerRadius="32dp"
+                app:elevation="12dp"
+                app:rippleColor="#E55A2B"
+                android:icon="@drawable/ic_restaurant"
+                app:iconTint="#FFFFFF"
+                app:iconSize="24dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
